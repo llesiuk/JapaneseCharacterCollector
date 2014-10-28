@@ -13,14 +13,14 @@ import android.view.MotionEvent;
 import android.view.View;
 
 public class DrawCharEventView extends View {
-	
+
 	private Path drawPath;
 	private Paint drawPaint, canvasPaint;
 	private int paintColor = Color.BLACK;
 	private Canvas drawCanvas;
 	private Bitmap canvasBitmap;
 	private float brushSize, lastBrushSize;
-	
+
 	public DrawCharEventView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		initialize();
@@ -39,25 +39,26 @@ public class DrawCharEventView extends View {
 		drawPaint.setStrokeCap(Paint.Cap.ROUND);
 		canvasPaint = new Paint(Paint.DITHER_FLAG);
 	}
-	
+
 	public void setBrushSize(float newSize) {
-		float pixelAmount = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
-			    newSize, getResources().getDisplayMetrics());
-		brushSize=pixelAmount;
+		float pixelAmount = TypedValue.applyDimension(
+				TypedValue.COMPLEX_UNIT_DIP, newSize, getResources()
+						.getDisplayMetrics());
+		brushSize = pixelAmount;
 		drawPaint.setStrokeWidth(brushSize);
 	}
-	
-	public void setLastBrushSize(float lastSize){
-	    lastBrushSize=lastSize;
+
+	public void setLastBrushSize(float lastSize) {
+		lastBrushSize = lastSize;
 	}
-	
-	public float getLastBrushSize(){
-	    return lastBrushSize;
+
+	public float getLastBrushSize() {
+		return lastBrushSize;
 	}
-	
-	public void startNew(){
-	    drawCanvas.drawColor(0, PorterDuff.Mode.CLEAR);
-	    invalidate();
+
+	public void startNew() {
+		drawCanvas.drawColor(0, PorterDuff.Mode.CLEAR);
+		invalidate();
 	}
 
 	@Override
@@ -80,24 +81,24 @@ public class DrawCharEventView extends View {
 		float touchY = event.getY();
 		switch (event.getAction()) {
 		case MotionEvent.ACTION_DOWN:
-		    drawPath.moveTo(touchX, touchY);
-		    break;
+			drawPath.moveTo(touchX, touchY);
+			break;
 		case MotionEvent.ACTION_MOVE:
-		    drawPath.lineTo(touchX, touchY);
-		    break;
+			drawPath.lineTo(touchX, touchY);
+			break;
 		case MotionEvent.ACTION_UP:
-		    drawCanvas.drawPath(drawPath, drawPaint);
-		    drawPath.reset();
-		    break;
+			drawCanvas.drawPath(drawPath, drawPaint);
+			drawPath.reset();
+			break;
 		default:
-		    return false;
+			return false;
 		}
 		invalidate();
 		return true;
 	}
-	
+
 	public Bitmap getBitmap() {
 		return this.canvasBitmap;
 	}
-	
-} 
+
+}

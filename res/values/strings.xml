@@ -3,25 +3,19 @@
 
     <string name="hello">Hello World, MainActivity!</string>
     <string name="app_name">Japanese Characters Collector</string>
-    
     <string name="hiragana">Hiragana</string>
     <string name="katakana">Katakana</string>
     <string name="kanji">Kanji</string>
-    
     <string name="name_desc">Drawing syllable:</string>
     <string name="missing">a</string>
-    
     <string name="clean">Clean</string>
     <string name="brush_size">Brush Size</string>
     <string name="eraser_size">Eraser Size</string>
     <string name="next">Next</string>
-    
     <string name="tap">Tap the screen to start drawing the character.</string>
-    
     <string name="sml">Small</string>
-	<string name="med">Medium</string>
-	<string name="lrg">Large</string>
-	
-	<string name="progress">Current progress</string>
+    <string name="med">Medium</string>
+    <string name="lrg">Large</string>
+    <string name="progress">Current progress</string>
 
 </resources>

@@ -6,11 +6,11 @@ public class Syllable {
 	private String txtNumber;
 	private int number;
 	private int numberOfStrokes;
-	
+
 	public Syllable(String name, int number, int numberOfStrokes) {
 		this.name = name;
 		this.number = number;
-		if(number < 10) {
+		if (number < 10) {
 			this.txtNumber = "0" + number;
 		} else {
 			this.txtNumber = "" + number;
@@ -48,24 +48,21 @@ public class Syllable {
 	public void setNumberOfStrokes(int numberOfStrokes) {
 		this.numberOfStrokes = numberOfStrokes;
 	}
-	
+
 	public String getCode() {
 		return this.txtNumber + "_" + this.name;
 	}
-	
+
 	public String getKanjiCode() {
 		if (this.number < 10) {
 			return "k000" + this.number;
-		} else 
-		if (this.number < 100) {
+		} else if (this.number < 100) {
 			return "k00" + this.number;
-		} else
-		if (this.number < 1000) {
+		} else if (this.number < 1000) {
 			return "k0" + this.number;
 		} else {
 			return "k" + this.number;
 		}
 	}
-	
-	
+
 }

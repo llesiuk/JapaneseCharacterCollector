@@ -9,42 +9,42 @@
         android:id="@+id/typeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingBottom="5dp"
-        android:textSize="15dp"
         android:layout_gravity="center_horizontal"
-        android:text="@string/hiragana" />
+        android:paddingBottom="5dp"
+        android:text="@string/hiragana"
+        android:textSize="15dp" />
 
     <TextView
         android:id="@+id/nameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:paddingBottom="20dp"  
-        android:textSize="30dp"
-        android:text="@string/missing" />
-    
-    <LinearLayout 
-        android:background="#ffffff"
+        android:paddingBottom="20dp"
+        android:text="@string/missing"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:layout_width="match_parent"
+        android:background="#ffffff"
         android:gravity="bottom" />
 
     <ImageView
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
         android:id="@+id/charImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
         android:src="@drawable/h01_a" />
-    
-    <LinearLayout 
-        android:background="#ffffff"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:layout_width="match_parent"
+        android:background="#ffffff"
         android:gravity="bottom" />
 
     <TextView
@@ -52,16 +52,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:paddingTop="10dp"
         android:paddingBottom="10dp"
+        android:paddingTop="10dp"
         android:text="@string/tap" />
-    
-    <LinearLayout 
-        android:background="#ffffff"
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp"
-        android:layout_width="match_parent"
+        android:background="#ffffff"
         android:gravity="bottom" />
 
     <TextView
@@ -71,14 +71,14 @@
         android:layout_gravity="center_horizontal"
         android:paddingTop="20dp"
         android:text="@string/progress" />
-    
+
     <ProgressBar
         android:id="@+id/progressBar"
-        android:paddingTop="2dp"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingTop="2dp" />
 
 </LinearLayout>

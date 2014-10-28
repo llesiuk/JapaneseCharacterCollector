@@ -8,32 +8,30 @@
         android:id="@+id/typeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingBottom="5dp"
-        android:textSize="15dp"
         android:layout_gravity="center_horizontal"
-        android:text="@string/hiragana" />
+        android:paddingBottom="5dp"
+        android:text="@string/hiragana"
+        android:textSize="15dp" />
 
     <TextView
         android:id="@+id/nameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"    
-        android:textSize="30dp"
-        android:text="@string/missing" />  
-    
-    
+        android:layout_gravity="center_horizontal"
+        android:text="@string/missing"
+        android:textSize="30dp" />
+
     <com.jpchar.DrawCharEventView
-    android:id="@+id/drawView"
-    android:layout_width="fill_parent"
-    android:layout_height="0dp"
-    android:layout_marginBottom="3dp"
-    android:layout_marginLeft="5dp"
-    android:layout_marginRight="5dp"
-    android:layout_marginTop="3dp"
-    android:layout_weight="1"
-    android:background="#FFFFFFFF" />
-    
-    
+        android:id="@+id/drawView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:background="#FFFFFFFF" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -59,7 +57,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:src="@android:drawable/ic_menu_directions" />
-
     </LinearLayout>
 
 </LinearLayout>
