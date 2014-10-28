@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="3" >
+    
+    <LinearLayout
+        android:id="@+id/hiraganaLayout"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/hiraganaImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/hiragana"
+            android:src="@drawable/hiragana_icon"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/hiraganaText"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/hiragana"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />        
+        
+
+    </LinearLayout>
+    
+    <LinearLayout 
+            android:background="#ffffff"
+            android:layout_height="2dp"
+            android:layout_width="match_parent"
+            android:gravity="bottom"
+            />
+    
+    <LinearLayout
+        android:id="@+id/katakanaLayout"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/katakanaImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/katakana"
+            android:src="@drawable/katakana_icon"
+            android:layout_gravity="center_horizontal" />
+
+
+        <TextView
+            android:id="@+id/katakanaText"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/katakana"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+    
+    <LinearLayout 
+            android:background="#ffffff"
+            android:layout_height="2dp"
+            android:layout_width="fill_parent"
+            android:gravity="bottom"
+            />
+    
+    <LinearLayout
+        android:id="@+id/kanjiLayout"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/kanjiImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/kanji"
+            android:src="@drawable/kanji_icon"
+            android:layout_gravity="center_horizontal" />
+
+
+        <TextView
+            android:id="@+id/kanjiText"
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/kanji"
+            android:textColor="#ffffff"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+    
+</LinearLayout>
